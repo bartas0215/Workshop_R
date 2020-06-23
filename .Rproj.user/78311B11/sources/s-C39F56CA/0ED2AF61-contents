@@ -90,5 +90,5 @@ wykres_1 <- gapminder %>%
   group_by (continent) %>%
   summarize (medianGdpPercap = median(gdpPercap))
 
-# Create a bar plot showing medianGdp by continent
+
 ggplot (wykres_1,aes(x=continent,y =medianGdpPercap)) + geom_col()
